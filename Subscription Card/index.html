@@ -1,0 +1,244 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#tick-mark1{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+#tick-mark1::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 50%;
+    width: 2px;
+    background-color:gold;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+#tick-mark1::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 70%;
+    background-color: gold;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+#tick-mark2{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+#tick-mark2::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 50%;
+    width: 2px;
+    background-color: skyblue;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+#tick-mark2::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 70%;
+    background-color:skyblue;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+#tick-mark3{
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+#tick-mark3::before {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    height: 50%;
+    width: 2px;
+    background-color:lightgreen;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+#tick-mark3::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 70%;
+    background-color:lightgreen;
+    content: "";
+    transform: translateX(10px) rotate(-45deg);
+    transform-origin: left bottom;
+}
+
+* {
+  box-sizing:border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+body{ margin-left:300px;}
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  border-radius: 1.5rem;
+  background-color:white;
+}
+.button2{
+  background-color:white;
+  color: grey;
+  border-color:grey;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left:20px;
+  cursor: pointer;
+  border-radius:0.3rem;
+}
+.button1{
+  background-color:cement;
+  border: none;
+  color: grey;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left:20px;
+  cursor: pointer;
+  border-radius:0.3rem;
+}
+.button3{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left:20px;
+  cursor: pointer;
+  border-radius:0.3rem;
+}
+</style>
+</head>
+<body>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h1>$39</h1>
+      <span>/month</span>
+      <h2 style="color:gold">Basic Licence</h2>
+      <p>our government backed plan<br/>
+      designed to keep your business<br/>
+      legaly and secure</p>
+      <br/>
+      <hr>
+      <br/>
+      <div id="tick-mark1"> </div>secure your customer usage<br/>
+      <div id="tick-mark1"> </div>veiw basic analytics<br/>
+      <div id="tick-mark1"> </div>up to 350 customer profile<br/>
+      <div id="tick-mark1"> </div>custom network name<br/></br>
+      <input type="button" class="button1" value="Input Button">
+  </div>
+  </div>
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <h1>$55</h1>
+      <span>/month</span>
+      <h2 style="color:skyblue">Social Licence</h2>
+      <p>our government backed plan<br/>
+      designed to keep your business<br/>
+      legaly and secure</p>
+      <br/>
+      <hr>
+      <br/>
+      <div id="tick-mark2"> </div>secure your customer usage<br/>
+      <div id="tick-mark2"> </div>veiw basic analytics<br/>
+      <div id="tick-mark2"> </div>up to 350 customer profile<br/>
+      <div id="tick-mark2"> </div>custom network name<br/></br>
+      <input type="button" class="button2" value="Input Button">
+  </div>
+  </div>
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <h1>$99</h1>
+      <span>/month</span>
+      <h2 style="color:lightgreen">Marketing Licence</h2>
+      <p>our government backed plan<br/>
+      designed to keep your business<br/>
+      legaly and secure</p>
+      <br/>
+      <hr>
+      <br/>
+      <div id="tick-mark3"> </div>secure your customer usage<br/>
+      <div id="tick-mark3"> </div>veiw basic analytics<br/>
+      <div id="tick-mark3"> </div>up to 350 customer profile<br/>
+      <div id="tick-mark3"> </div>custom network name<br/></br>
+      <input type="button" class="button3" value="Upgrade to marketing">
+  </div>
+  </div>
+  
+  
+</div>
+
+</body>
+</html>
